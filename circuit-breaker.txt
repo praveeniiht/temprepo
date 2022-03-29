@@ -1,0 +1,105 @@
+What if one of the services is down or is slow
+  -> impacts entire chain
+Questions
+1. Can we return a fall back response if a service is down?
+2. Can we implement a circuit breaker pattern to reduce load?
+3. Can we retry requests in case of temporary failures?
+4. Can we implement rate limiting? 
+    -Allow only for certain number of times.
+
+resilience4j /Hystrix
+
+closed -----> open  
+
+
+half open
+
+
+1. Client  -- User interface through which the docker engines
+   receives the requests and sends the response
+
+2. Deamon / docker engine -- Which is actual engines which creates
+,executes the docker
+
+3. Index 
+
+
+
+1. Docker Image
+
+2. Docker Container
+
+3. Registries
+    1. public
+    2. private
+
+1. How to create image
+2. How to create / run the containers from the images
+3. How to manage images or container
+4. How to run a simple springboot application through 
+   this containers.
+
+Appliacation Logic and Lang logic
+
+Hibernate
+Struts
+Spring
+EJB
+
+
+Spring Basic Functionality
+
+1. Inversion of Control
+2. Depedency Injection
+
+class Student{
+	int htno;
+	String name;
+}
+
+Student s = new Student();
+
+
+interface DatabaseConnections{
+	f1();
+	f2();
+	f3();
+}
+
+
+class DataImple1 implements DatabaseConnections{
+	f1(){   }
+	f2() {  }
+	f3() {  }
+
+}
+@Qualifier
+class DataImple2 implements DatabaseConnections{
+	f1(){   }
+	f2() {  }
+	f3() {  }
+
+}
+
+@Autowired
+Databaseconnections conn;
+
+
+
+configurations can be provided in 3 ways
+
+1. xml file
+2. java based
+3. Java annotation based
+
+
+
+
+
+
+
+
+
+
+
+
